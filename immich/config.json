@@ -79,8 +79,6 @@
     "MACHINE_LEARNING_CACHE_FOLDER": "/data/machine-learning",
     "MACHINE_LEARNING_WORKERS": "1",
     "MACHINE_LEARNING_WORKER_TIMEOUT": "120",
-    "PGID": "65534",
-    "PUID": "65534",
     "REDIS_HOSTNAME": "localhost",
     "REDIS_PORT": "6379",
     "REVERSE_GEOCODING_DUMP_DIRECTORY": "/data/.reverse-geocoding-dump/",
@@ -107,7 +105,9 @@
     "DISABLE_MACHINE_LEARNING": false,
     "JWT_SECRET": "jt+OVWY6WqKJXw3xF5qOxN5L5/f4u2jlIlCQgWS3E4w=",
     "TZ": "Europe/Paris",
-    "data_location": "/share/immich"
+    "data_location": "/share/immich",
+    "PGID": "65534",
+    "PUID": "65534",
   },
   "panel_admin": false,
   "panel_icon": "mdi:file-search",
@@ -139,7 +139,9 @@
     "data_location": "str",
     "library_location": "str?",
     "localdisks": "str?",
-    "networkdisks": "str?"
+    "networkdisks": "str?",
+    "PGID": "str?",
+    "PUID": "str?"
   },
   "services": [
     "mysql:want"
@@ -148,7 +150,7 @@
   "udev": true,
   "url": "https://github.com/alexbelgium/hassio-addons",
   "usb": true,
-  "version": "1.129.0",
+  "version": "1.129.1",
   "video": true,
   "webui": "http://[HOST]:[PORT:8080]"
 }
